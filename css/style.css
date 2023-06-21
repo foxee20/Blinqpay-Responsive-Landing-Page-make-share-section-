@@ -1,0 +1,105 @@
+@import url(nullstyle.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1067px;
+  margin: 0 auto;
+}
+.make-share {
+  padding: 79px;
+  background-color: #e5e5e5;
+}
+
+.make-share__body {
+  display: flex;
+  justify-content: space-between;
+}
+.make-share__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  grid-template-rows: repeat(7, 1fr);
+  row-gap: 36px;
+  column-gap: 46px;
+  margin-top: 90px;
+}
+.make-share__card {
+  background-color: #ffffff;
+  box-shadow: 7px 10px 50px #e8e2f0;
+  border-radius: 4px;
+  padding: 30px 30px 30px 48px;
+}
+
+.make-share__card:nth-child(1) {
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+.make-share__card:nth-child(2) {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+.make-share__card:nth-child(3) {
+  grid-row-start: 5;
+  grid-row-end: 8;
+}
+.make-share__card:nth-child(4) {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+.make-share__card-icon {
+  padding-bottom: 2.75px;
+}
+.make-share__card-title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 128.6%;
+  letter-spacing: 0.04em;
+  color: #5c5e6e;
+}
+.make-share__card-subtitle {
+  font-size: 16px;
+  line-height: 128.6%;
+  letter-spacing: 0.075em;
+  color: #756f6f;
+  opacity: 0.7;
+}
+.make-share__text {
+  max-width: 300px;
+}
+.make-share__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 128.6%;
+  letter-spacing: 0.04em;
+  color: #857885;
+  margin-bottom: 4px;
+}
+.make-share__payments {
+  color: #5c0e62;
+}
+.make-share__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 128.6%;
+  letter-spacing: 0.04em;
+  color: #857885;
+  margin-bottom: 16px;
+}
+.make-share__learn-more {
+  font-weight: 800;
+  font-size: 18px;
+  color: #5c0e62;
+}
+.make-share__learn-more::after {
+  content: "";
+  background: url("../img/arror-right.svg") center no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 13px;
+}
