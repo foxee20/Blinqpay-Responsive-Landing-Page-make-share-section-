@@ -74,13 +74,19 @@ body {
 .make-share__text {
   max-width: 300px;
 }
+
 .make-share__title {
+  position: relative;
   font-weight: 700;
   font-size: 40px;
   line-height: 128.6%;
   letter-spacing: 0.04em;
   color: #857885;
   margin-bottom: 4px;
+}
+.make-share__substract {
+  position: absolute;
+  transform: translate(-45px, -40px);
 }
 .make-share__payments {
   color: #5c0e62;
